@@ -34,7 +34,7 @@ fun ChapterItem(
     APIConn: MangaReaderConnect
 ) {
     val download = SwipeAction(
-        onSwipe = { /*TODO DOWNLOAD*/ },
+        onSwipe = { /* TODO: DOWNLOAD */ },
         icon = {
             Icon(
                 modifier = Modifier.padding(16.dp),

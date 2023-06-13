@@ -1,5 +1,7 @@
 package com.dawnt.mangareader.components
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -42,6 +44,7 @@ import com.dawnt.mangareader.utils.MangaReaderConnect
 import com.dawnt.mangareader.utils.loadImage
 import me.saket.swipe.SwipeAction
 import me.saket.swipe.SwipeableActionsBox
+import kotlin.math.roundToInt
 
 @Composable
 fun LastChapterViewed(
@@ -71,7 +74,10 @@ fun LastChapterViewed(
         },
         background = Color(0xFFB63D3D),
     )
-    if (!swiped) {
+    AnimatedVisibility(
+        visible = !swiped,
+        exit = slideOutHorizontally(targetOffsetX = { n -> (n * -1.5f).roundToInt() })
+    ) {
         SwipeableActionsBox(endActions = listOf(unfollow), swipeThreshold = 72.dp) {
             Row(
                 modifier = Modifier

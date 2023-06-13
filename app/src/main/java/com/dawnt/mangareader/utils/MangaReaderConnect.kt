@@ -60,7 +60,6 @@ class MangaReaderConnect(URL: String) : ViewModel() {
     }
 
     fun getMangaDetails(nameURL: String) {
-        println("-----------------GET DETAILS-------------------------")
         _mangaDetail.value = null
         viewModelScope.launch {
             try {
@@ -77,7 +76,6 @@ class MangaReaderConnect(URL: String) : ViewModel() {
         chapter: String,
         inBytes: Boolean = false
     ) {
-        println("--------------------GET CHAPTER---------------------")
         _mangaChapter.value = null
         viewModelScope.launch {
             try {
