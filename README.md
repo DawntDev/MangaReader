@@ -69,7 +69,7 @@ Functions:
 
 -   First clone the repository
     ```bash
-    git clone https://github.com/DawntDev/HTML-Render.git
+    git clone https://github.com/DawntDev/MangaReader.git
     ```
 -   Then create a branch with your user name
     ```bash
