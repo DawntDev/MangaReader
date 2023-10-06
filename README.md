@@ -29,10 +29,10 @@ This app is made with Kotlin, with the support of [Jetpack Compose](https://deve
 ## Overview
 
 <div align="center">
-    <img src="./readme-assets/splash-screen.png" height="420px" raw=false>
-    <img src="./readme-assets/main-screen.png" height="420px" raw=false>
-    <img src="./readme-assets/search-screen.png" height="420px" raw=false>
-    <img src="./readme-assets/chapter-screen.png" height="420px" raw=false>
+    <img src="https://raw.githubusercontent.com/DawntDev/MangaReader/master/readme-assets/splash-screen.png" height="420px" raw=false>
+    <img src="https://raw.githubusercontent.com/DawntDev/MangaReader/master/readme-assets/main-screen.png" height="420px" raw=false>
+    <img src="https://raw.githubusercontent.com/DawntDev/MangaReader/master/readme-assets/search-screen.png" height="420px" raw=false>
+    <img src="https://raw.githubusercontent.com/DawntDev/MangaReader/master/readme-assets/chapter-screen.png" height="420px" raw=false>
 </div>
 
 The application is created with [Jetpack Compose](https://developer.android.com/jetpack) and in addition with a backend which is capable of scraping content from web pages with the help of [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) and [Selenium](https://www.selenium.dev/) in case the content loading of the scraped page is dynamic. Finally, for the structuring of the API, [FastAPI](https://fastapi.tiangolo.com/) is used to have a server that can perform these scrapes in real-time.
@@ -69,7 +69,7 @@ Functions:
 
 -   First clone the repository
     ```bash
-    git clone https://github.com/DawntDev/HTML-Render.git
+    git clone https://github.com/DawntDev/MangaReader.git
     ```
 -   Then create a branch with your user name
     ```bash
